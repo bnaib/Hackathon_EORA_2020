@@ -13,8 +13,7 @@
         const   MODEL_ANIME_GAN = 2;
         const   MODEL_POLYGON = 3;
         const   MODEL_PIXEL_ART = 4;
-
-        const   FACE_BLURRING = 5;
+        const   MODEL_FACE_BLURRING = 5;
 
         const   ERROR_NO = 0;
         const   ERROR_RESPONSE = 1;
@@ -61,15 +60,15 @@
                 throw new Exception('class VisionHub -> check_model -> '.
                     '$this->error !== self::ERROR_NO');
             }
-            if ($model === self::MODEL_ANIME_SELFIE)
+            if ($model == self::MODEL_ANIME_SELFIE)
                 return ('anime-selfie');
-            if ($model === self::MODEL_ANIME_GAN)
+            if ($model == self::MODEL_ANIME_GAN)
                 return ('anime_gan');
-            if ($model === self::MODEL_POLYGON)
+            if ($model == self::MODEL_POLYGON)
                 return ('polygon');
-            if ($model === self::MODEL_PIXEL_ART)
+            if ($model == self::MODEL_PIXEL_ART)
                 return ('pixel-art');
-            if ($model === self::FACE_BLURRING)
+            if ($model == self::MODEL_FACE_BLURRING)
                 return ('face-blurring');
             throw new Exception(
                 'class VisionHub -> check_model -> $model isn`t correct!');
