@@ -88,7 +88,7 @@ if (isset($_FILES['image']))
 <?elseif($vh->get_error() === VisionHub::ERROR_RESPONSE):?>
             <p>Сервер вернул неудовлетворительный результат - попробуйте позже или с другим изображением - мы работаем над улучшением сервиса</p>
 <?endif;?>
-<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
     <div class="fixed-bottom ">
     <footer class="container-fluid">
       <div class="container-fluid">
@@ -97,10 +97,10 @@ if (isset($_FILES['image']))
               <h2>Наши контакты</h2>                    
             </div>
              <div class="col-12 social padding">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a target="_blank" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                <a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
           </div>
         </div>
       </div>
