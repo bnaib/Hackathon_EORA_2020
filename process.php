@@ -40,10 +40,10 @@ if (isset($_FILES['image']))
 <body>
 
 	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-    <div class="container-fluid">
-      <a href="#" class="navbar-brad" ></a>
-  </div>
-  </nav>
+        <div class="container-fluid">
+            <a href="#" class="navbar-brad" ><img src="img/shapka_verkhnyaya3.png"></a>
+        </div>
+    </nav>
 	<div class="merch">
 		<div class="container">
             <h1 class="text-center">А каким ты будешь сегодня?</h1>

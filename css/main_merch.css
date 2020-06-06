@@ -19,19 +19,16 @@ html, body {
 	}
 
 nav { 
-	background:url('../img/shapka_verkhnyaya3.png') center center no-repeat;
-  	-o-background-size: cover;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	background-size: cover;
-  	height: 150px;
-	}
-
-.navbar-brad img {
-	-webkit-background-size: cover;
+    background:url('../img/nizhnyaya_shapka_seraya_panelka.png') center center no-repeat;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover}
+    color: #808080;
+  }
+
+.navbar-brad img {
+  width: 100%;}
 
 .navbar-nav li {
 	padding-right: 20px; 
@@ -105,4 +102,6 @@ footer {
 	-o-background-size: cover;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
-  	background-size: cover;}
+  	background-size: cover;
+    padding-top: 50px;
+    border-top: 4px;}
