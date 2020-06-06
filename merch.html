@@ -24,10 +24,48 @@
 			<h1 class="text-center">А каким ты будешь сегодня?</h1>
 			<div class="row justify-content-center">
 				<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-          <form enctype="multipart/form-data" action="" method="post">
-            <input type="file" name="image"/>
-            <input type="submit" />
-            </form>
+        
+             <form action="#" enctype="multipart/form-data" method="post">
+
+            <p>Custom file upload:</p>
+
+            <div class="custom-file">
+
+                <input type="file" class="custom-file-input"
+
+                        id="fileUpload" name="file_name">
+
+                <label class="custom-file-label" for="fileUpload">
+
+                    Choose file from computer
+
+                </label>
+
+            </div>
+
+            <div class="col-auto my-1">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+        </form>
+
+      
+
+    <! - Скрипт для отображения имени файла в поле выбора ->
+
+    <script>
+
+        $(".custom-file-input").on("change", function() {
+
+            var file_name = $(this).val().split("\\").pop();
+
+            $(this).siblings(".custom-file-label")
+
+                    .addClass("selected").html(file_name);
+
+        });
+
+</script>
             <br>
             <br>
             <br>
@@ -44,7 +82,7 @@
          <div class="row padding text-center">
             <div class="col-12">
               <h2>Наши контакты</h2>                    
-             </div>
+            </div>
              <div class="col-12 social padding">
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
