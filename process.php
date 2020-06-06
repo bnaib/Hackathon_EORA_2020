@@ -1,5 +1,6 @@
 <?php
 header('Content-Type: text/html; charset=utf-8');
+set_time_limit(120);
 require_once ("vh.class.php");
 
 if (isset($_FILES['image']))
@@ -45,7 +46,14 @@ if (isset($_FILES['image']))
   </nav>
 	<div class="merch">
 		<div class="container">
-			<h1 class="text-center">А каким ты будешь сегодня?</h1>
+            <h1 class="text-center">А каким ты будешь сегодня?</h1>
+            <div class="container" ml-auto;>
+                <div class="row justify-content-center">
+                  <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+                    <a class="btn btn-primary btn-lg btn-block" href="index.html" role="button" >Назад</a>
+                  </div>
+                </div>
+            </div>
 			<div class="row justify-content-center">
 				<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
             <form action="" enctype="multipart/form-data" method="post">
@@ -74,22 +82,13 @@ if (isset($_FILES['image']))
 
 <?elseif($vh->get_error() === VisionHub::ERROR_NO):?>
             <img src="data:image/jpeg;base64,<?=base64_encode($result_file);?>" style="width: 40%; height: 40%;"/>
-            <a href='./img.php?token=<?=$vh->get_token();?>&task_id=<?=$task_id;?>'>Ссылка на результат</a>
+            <a href='./img.php?token=<?=$vh->get_token();?>&task_id=<?=$task_id;?>' target='_blank'>Ссылка на результат</a>
 <?elseif($vh->get_error() === VisionHub::ERROR_FILE):?>
             <p>Не подходящий файл, требудется *.png или *.jpg</p>
 <?elseif($vh->get_error() === VisionHub::ERROR_RESPONSE):?>
             <p>Сервер вернул неудовлетворительный результат - попробуйте позже или с другим изображением - мы работаем над улучшением сервиса</p>
 <?endif;?>
-<br>
-            <br>
-            <br>
-            <div class="container" ml-auto;>
-                <div class="row justify-content-center">
-                  <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-                    <a class="btn btn-primary btn-lg btn-block" href="index.html" role="button" >Назад</a>
-                  </div>
-                </div>
-            </div>
+<br><br><br><br><br><br><br>
     <div class="fixed-bottom ">
     <footer class="container-fluid">
       <div class="container-fluid">
