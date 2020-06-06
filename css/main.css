@@ -15,20 +15,19 @@ html, body {
   	-moz-background-size: cover;
   	background-size: cover;
   	-o-background-size: cover;
-  	
 	}
 
 nav { 
-	background:url('../img/shapka_verkhnyaya3.png') center center no-repeat;
+	background:url('../img/nizhnyaya_shapka_seraya_panelka.png') center center no-repeat;
   	-o-background-size: cover;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	background-size: cover;
-  	height: 6em;
+  	color: #808080;
 	}
 
 .navbar-brad img {
-	width: 150px;}
+	width: 100%;}
 
 .navbar-nav li {
 	padding-right: 20px; 
@@ -86,20 +85,8 @@ img{
 .fa-twiter{color: #00aced}
 .fa-youtube{color: #bb0000}
 
-.fixed-bottom {
-  position: fixet;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: $zindex-fixed;
-}
-
 footer { 
 	background:url(
-	'../img/nizhnyaya_shapka.png') center center no-repeat;
-
+	'../img/nizhnyaya_shapka.png') center no-repeat;
 	background-size:cover;
-	-o-background-size: cover;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	background-size: cover;}
+	}
