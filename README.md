@@ -6,6 +6,7 @@
 ### Usage and installing:  
 - You must have a raised web server that supports php scripts  
 - Copy files of project to web server  
+    - dirs "img" and "css" - it is desing css and images  
     - index.html - main page with links of process.php  
     - ch.class.php - library with class for connect www.visionhub.ru
     - img.php - page for geting image  
