@@ -1,4 +1,8 @@
 # Hackathon_EORA_2020
+## Team: Bifrost  
+## Result of hackathon - in top 10  
+![alt text](https://raw.githubusercontent.com/bnaib/Hackathon_EORA_2020/master/result.jpg)
+
 ### Goal:  
 - Create idea and web service for using neuronets of www.visionhub.ru  
 ### Idea:  
@@ -17,3 +21,4 @@
 - test.php - example(without desing) of use ch.class.php with result image  
 - test2.php - example(without desing) of use ch.class.php with result link of image(img.php)  
 - Prezentatsia_Bifrost.pptx - presentation for Hackathon_EORA_2020  
+- result.jpg - image of list top 10 hackathon teams  
