@@ -1,5 +1,7 @@
 <?php
     require_once ("vh.class.php");
+
+    set_time_limit(300);
     $vh = new VisionHub($_GET['token']);
     $result_url = $vh->get_result_url($_GET['task_id']);
     if($vh->get_error() !== VisionHub::ERROR_NO)

@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: text/html; charset=utf-8');
-set_time_limit(120);
+set_time_limit(300);
 require_once ("vh.class.php");
 
 if (isset($_FILES['image']))
