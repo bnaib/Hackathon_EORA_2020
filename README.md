@@ -15,3 +15,4 @@
 - merch.html - example desing html  
 - test.php - example(without desing) of use ch.class.php with result image  
 - test2.php - example(without desing) of use ch.class.php with result link of image(img.php)  
+- Prezentatsia_Bifrost.pptx - presentation for Hackathon_EORA_2020  
